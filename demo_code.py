@@ -129,6 +129,60 @@ def wrong_callable():
     if callable(number):
         return number()
 
+def main2(options: dict = {}) -> str:
+    pdb.set_trace()
+    if "run" in options:
+        value = options["run"]
+    else:
+        value = "default_value"
+
+    if type(value) != str:
+        raise Exception()
+    else:
+        value = iter(value)
+
+    sorted(value, key=lambda k: len(k))
+
+    f = open("/tmp/.deepsource.toml", "r")
+    f.write("config file.")
+    f.close()
+
+def main3(options: dict = {}) -> str:
+    pdb.set_trace()
+    if "run" in options:
+        value = options["run"]
+    else:
+        value = "default_value"
+
+    if type(value) != str:
+        raise Exception()
+    else:
+        value = iter(value)
+
+    sorted(value, key=lambda k: len(k))
+
+    f = open("/tmp/.deepsource.toml", "r")
+    f.write("config file.")
+    f.close()
+
+def main4(options: dict = {}) -> str:
+    pdb.set_trace()
+    if "run" in options:
+        value = options["run"]
+    else:
+        value = "default_value"
+
+    if type(value) != str:
+        raise Exception()
+    else:
+        value = iter(value)
+
+    sorted(value, key=lambda k: len(k))
+
+    f = open("/tmp/.deepsource.toml", "r")
+    f.write("config file.")
+    f.close()
+
 
 if __name__ == "__main__":
     args = ["--disable", "all"]
